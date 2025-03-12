@@ -1,0 +1,8 @@
+bk_loader.name=bk_loader
+bk_loader.communication=serial
+bk_loader.protocol=serial
+bk_loader.program.protocol=serial
+bk_loader.program.tool=bk_loader
+bk_loader.program.tool.default=bk_loader
+bk_loader.program.extra_params=
+bk_loader.extra_params=

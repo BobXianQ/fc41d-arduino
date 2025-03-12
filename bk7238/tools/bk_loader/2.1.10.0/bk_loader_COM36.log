@@ -1,0 +1,28 @@
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 36 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 12:02:31.705    Current port : COM36 + BaudRate : 115200 connect success
+ 2025-02-25 12:02:31.906    do_reset_signal
+ 2025-02-25 12:02:31.906    Getting Bus...
+ 2025-02-25 12:02:33.114    Getting Bus...
+ 2025-02-25 12:02:48.114    LinkCheck Timeout
+ 2025-02-25 12:02:48.114    GetBus fail!
+ 2025-02-25 12:02:48.125    Total Test Time : 0.010 s
+ 2025-02-25 12:02:48.125    Writing Flash Failed, code 0                
+
+ 2025-02-25 12:02:48.157    Boot_Reboot
+
+ 2025-02-25 12:02:48.197    
+==============================================================
+				   (warning)
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+

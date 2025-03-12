@@ -1,0 +1,96 @@
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 23 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-03-04 15:02:54.664    Current port : COM23 + BaudRate : 115200 connect success
+ 2025-03-04 15:02:54.866    do_reset_signal
+ 2025-03-04 15:02:54.866    Getting Bus...
+ 2025-03-04 15:02:54.940    Gotten Bus...
+ 2025-03-04 15:02:54.957    Got ChipId: 0x7238
+
+ 2025-03-04 15:02:54.957    Current Chip is : BK7238
+ 2025-03-04 15:02:54.976    Current baudrate : 1500000 success
+ 2025-03-04 15:02:54.979    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-03-04 15:02:54.979    Got FLashMID: 0x154285
+
+ 2025-03-04 15:02:54.982    Unprotecting Flash
+ 2025-03-04 15:02:55.013    Unprotected Flash ->pass
+ 2025-03-04 15:02:55.015    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-03-04 15:02:55.015    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-03-04 15:02:55.015    [ 0 ] file_crc : 0x688f5698
+ 2025-03-04 15:02:55.015    Begin EraseFlash
+ 2025-03-04 15:02:55.017    Start 4K Erase
+ 2025-03-04 15:02:55.017    End 4K Erase
+ 2025-03-04 15:02:55.017    Start 64K Erase
+ 2025-03-04 15:02:55.766    End 64K Erase
+ 2025-03-04 15:02:55.766    EraseFlash ->pass
+ 2025-03-04 15:02:55.768    Begin WriteFlash...
+ 2025-03-04 15:03:05.541    WriteFlash ->pass
+ 2025-03-04 15:03:05.541    Begin read CRC
+ 2025-03-04 15:03:08.384    CRC_Verify ->pass
+ 2025-03-04 15:03:08.414    Enprotect pass
+ 2025-03-04 15:03:08.447    Boot_Reboot
+
+ 2025-03-04 15:03:08.464    Total Test Time : 13.522 s
+ 2025-03-04 15:03:08.464    Writing Flash OK                             
+
+ 2025-03-04 15:03:08.464    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 23 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-03-05 10:30:43.774    Current port : COM23 + BaudRate : 115200 connect success
+ 2025-03-05 10:30:43.974    do_reset_signal
+ 2025-03-05 10:30:43.974    Getting Bus...
+ 2025-03-05 10:30:44.049    Gotten Bus...
+ 2025-03-05 10:30:44.064    Got ChipId: 0x7238
+
+ 2025-03-05 10:30:44.064    Current Chip is : BK7238
+ 2025-03-05 10:30:44.083    Current baudrate : 1500000 success
+ 2025-03-05 10:30:44.086    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-03-05 10:30:44.086    Got FLashMID: 0x154285
+
+ 2025-03-05 10:30:44.089    Unprotecting Flash
+ 2025-03-05 10:30:44.120    Unprotected Flash ->pass
+ 2025-03-05 10:30:44.122    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-03-05 10:30:44.122    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-03-05 10:30:44.122    [ 0 ] file_crc : 0x8eccfac8
+ 2025-03-05 10:30:44.122    Begin EraseFlash
+ 2025-03-05 10:30:44.125    Start 4K Erase
+ 2025-03-05 10:30:44.125    End 4K Erase
+ 2025-03-05 10:30:44.125    Start 64K Erase
+ 2025-03-05 10:30:44.873    End 64K Erase
+ 2025-03-05 10:30:44.873    EraseFlash ->pass
+ 2025-03-05 10:30:44.876    Begin WriteFlash...
+ 2025-03-05 10:30:54.896    WriteFlash ->pass
+ 2025-03-05 10:30:54.896    Begin read CRC
+ 2025-03-05 10:30:57.739    CRC_Verify ->pass
+ 2025-03-05 10:30:57.769    Enprotect pass
+ 2025-03-05 10:30:57.802    Boot_Reboot
+
+ 2025-03-05 10:30:57.820    Total Test Time : 13.771 s
+ 2025-03-05 10:30:57.820    Writing Flash OK                             
+
+ 2025-03-05 10:30:57.820    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+

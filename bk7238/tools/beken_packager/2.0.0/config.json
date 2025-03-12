@@ -1,0 +1,21 @@
+{																	
+ 	"count": 2,                                                     
+ 	"magic": "RT-Thread",                                           
+	"section": [                                                    
+	{                                                               
+		"firmware": "E:/CSDK/ql_build/bootloader/bootloader1.bin",          					
+		"partition": "bootloader",                                  
+		"size": "65280",                                            
+		"start_addr": "0x00000000",                                 
+		"version": "2M.1220"                                        
+	},                                                              
+	{                                                               
+		"firmware": "C:\\Users\\Bob.Xian\\AppData\\Local\\arduino\\sketches\\47CA30532C55A67E10190555FDDC8A05\\test1.ino.bin",                     			
+		"partition": "app",                                         
+		"size": "1156K",                                            
+		"start_addr": "0x00011000",                                 
+		"version": "2M.1220"                                        
+	}                                                               
+	],                                                              
+	"version": "0.1"                                                
+}                                                                   

@@ -1,0 +1,476 @@
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 12:03:08.517    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 12:03:08.718    do_reset_signal
+ 2025-02-25 12:03:08.718    Getting Bus...
+ 2025-02-25 12:03:08.792    Gotten Bus...
+ 2025-02-25 12:03:08.808    Got ChipId: 0x7238
+
+ 2025-02-25 12:03:08.808    Current Chip is : BK7238
+ 2025-02-25 12:03:08.827    Current baudrate : 1500000 success
+ 2025-02-25 12:03:08.830    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 12:03:08.830    Got FLashMID: 0x154285
+
+ 2025-02-25 12:03:08.834    Unprotecting Flash
+ 2025-02-25 12:03:08.864    Unprotected Flash ->pass
+ 2025-02-25 12:03:08.864    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 12:03:08.864    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 12:03:08.865    [ 0 ] file_crc : 0x11848216
+ 2025-02-25 12:03:08.865    Begin EraseFlash
+ 2025-02-25 12:03:08.868    Start 4K Erase
+ 2025-02-25 12:03:08.868    End 4K Erase
+ 2025-02-25 12:03:08.868    Start 64K Erase
+ 2025-02-25 12:03:09.618    End 64K Erase
+ 2025-02-25 12:03:09.618    EraseFlash ->pass
+ 2025-02-25 12:03:09.620    Begin WriteFlash...
+ 2025-02-25 12:03:19.411    WriteFlash ->pass
+ 2025-02-25 12:03:19.411    Begin read CRC
+ 2025-02-25 12:03:22.253    CRC_Verify ->pass
+ 2025-02-25 12:03:22.281    Enprotect pass
+ 2025-02-25 12:03:22.315    Boot_Reboot
+
+ 2025-02-25 12:03:22.333    Total Test Time : 13.540 s
+ 2025-02-25 12:03:22.333    Writing Flash OK                             
+
+ 2025-02-25 12:03:22.333    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 12:04:51.244    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 12:04:51.445    do_reset_signal
+ 2025-02-25 12:04:51.445    Getting Bus...
+ 2025-02-25 12:04:51.520    Gotten Bus...
+ 2025-02-25 12:04:51.535    Got ChipId: 0x7238
+
+ 2025-02-25 12:04:51.535    Current Chip is : BK7238
+ 2025-02-25 12:04:51.554    Current baudrate : 1500000 success
+ 2025-02-25 12:04:51.557    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 12:04:51.557    Got FLashMID: 0x154285
+
+ 2025-02-25 12:04:51.561    Unprotecting Flash
+ 2025-02-25 12:04:51.592    Unprotected Flash ->pass
+ 2025-02-25 12:04:51.592    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 12:04:51.592    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 12:04:51.592    [ 0 ] file_crc : 0xe5965f35
+ 2025-02-25 12:04:51.592    Begin EraseFlash
+ 2025-02-25 12:04:51.595    Start 4K Erase
+ 2025-02-25 12:04:51.595    End 4K Erase
+ 2025-02-25 12:04:51.595    Start 64K Erase
+ 2025-02-25 12:04:52.345    End 64K Erase
+ 2025-02-25 12:04:52.345    EraseFlash ->pass
+ 2025-02-25 12:04:52.348    Begin WriteFlash...
+ 2025-02-25 12:05:02.140    WriteFlash ->pass
+ 2025-02-25 12:05:02.140    Begin read CRC
+ 2025-02-25 12:05:04.983    CRC_Verify ->pass
+ 2025-02-25 12:05:05.011    Enprotect pass
+ 2025-02-25 12:05:05.045    Boot_Reboot
+
+ 2025-02-25 12:05:05.066    Total Test Time : 13.545 s
+ 2025-02-25 12:05:05.066    Writing Flash OK                             
+
+ 2025-02-25 12:05:05.066    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:00:01.436    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 18:00:01.637    do_reset_signal
+ 2025-02-25 18:00:01.637    Getting Bus...
+ 2025-02-25 18:00:01.712    Gotten Bus...
+ 2025-02-25 18:00:01.824    Got ChipId: 0x7238
+
+ 2025-02-25 18:00:01.824    Current Chip is : BK7238
+ 2025-02-25 18:00:01.843    Current baudrate : 1500000 success
+ 2025-02-25 18:00:01.845    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 18:00:01.845    Got FLashMID: 0x154285
+
+ 2025-02-25 18:00:01.849    Unprotecting Flash
+ 2025-02-25 18:00:01.880    Unprotected Flash ->pass
+ 2025-02-25 18:00:01.880    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 18:00:01.880    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 18:00:01.880    [ 0 ] file_crc : 0x5a48f147
+ 2025-02-25 18:00:01.881    Begin EraseFlash
+ 2025-02-25 18:00:01.883    Start 4K Erase
+ 2025-02-25 18:00:01.883    End 4K Erase
+ 2025-02-25 18:00:01.883    Start 64K Erase
+ 2025-02-25 18:00:02.631    End 64K Erase
+ 2025-02-25 18:00:02.631    EraseFlash ->pass
+ 2025-02-25 18:00:02.634    Begin WriteFlash...
+ 2025-02-25 18:00:13.071    WriteFlash ->pass
+ 2025-02-25 18:00:13.071    Begin read CRC
+ 2025-02-25 18:00:15.915    CRC_Verify ->pass
+ 2025-02-25 18:00:15.942    Enprotect pass
+ 2025-02-25 18:00:15.975    Boot_Reboot
+
+ 2025-02-25 18:00:15.991    Total Test Time : 14.279 s
+ 2025-02-25 18:00:15.991    Writing Flash OK                             
+
+ 2025-02-25 18:00:15.991    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:21:05.696    Current port : COM15 + BaudRate : 115200 connect failed
+ 2025-02-25 18:21:05.696    Connect device fail!
+ 2025-02-25 18:21:05.707    Total Test Time : 0.000 s
+ 2025-02-25 18:21:05.707    Writing Flash Failed, code 0                
+
+ 2025-02-25 18:21:05.708    
+==============================================================
+				   (warning)
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:21:30.048    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 18:21:30.249    do_reset_signal
+ 2025-02-25 18:21:30.249    Getting Bus...
+ 2025-02-25 18:21:30.324    Gotten Bus...
+ 2025-02-25 18:21:30.340    Got ChipId: 0x7238
+
+ 2025-02-25 18:21:30.340    Current Chip is : BK7238
+ 2025-02-25 18:21:30.359    Current baudrate : 1500000 success
+ 2025-02-25 18:21:30.362    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 18:21:30.362    Got FLashMID: 0x154285
+
+ 2025-02-25 18:21:30.365    Unprotecting Flash
+ 2025-02-25 18:21:30.396    Unprotected Flash ->pass
+ 2025-02-25 18:21:30.396    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 18:21:30.396    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 18:21:30.396    [ 0 ] file_crc : 0x2a7c759a
+ 2025-02-25 18:21:30.396    Begin EraseFlash
+ 2025-02-25 18:21:30.399    Start 4K Erase
+ 2025-02-25 18:21:30.399    End 4K Erase
+ 2025-02-25 18:21:30.399    Start 64K Erase
+ 2025-02-25 18:21:31.149    End 64K Erase
+ 2025-02-25 18:21:31.149    EraseFlash ->pass
+ 2025-02-25 18:21:31.151    Begin WriteFlash...
+ 2025-02-25 18:21:41.613    WriteFlash ->pass
+ 2025-02-25 18:21:41.613    Begin read CRC
+ 2025-02-25 18:21:44.455    CRC_Verify ->pass
+ 2025-02-25 18:21:44.484    Enprotect pass
+ 2025-02-25 18:21:44.517    Boot_Reboot
+
+ 2025-02-25 18:21:44.535    Total Test Time : 14.210 s
+ 2025-02-25 18:21:44.535    Writing Flash OK                             
+
+ 2025-02-25 18:21:44.535    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:25:19.718    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 18:25:19.919    do_reset_signal
+ 2025-02-25 18:25:19.919    Getting Bus...
+ 2025-02-25 18:25:19.993    Gotten Bus...
+ 2025-02-25 18:25:20.106    Got ChipId: 0x7238
+
+ 2025-02-25 18:25:20.106    Current Chip is : BK7238
+ 2025-02-25 18:25:20.124    Current baudrate : 1500000 success
+ 2025-02-25 18:25:20.127    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 18:25:20.127    Got FLashMID: 0x154285
+
+ 2025-02-25 18:25:20.130    Unprotecting Flash
+ 2025-02-25 18:25:20.161    Unprotected Flash ->pass
+ 2025-02-25 18:25:20.161    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 18:25:20.161    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 18:25:20.161    [ 0 ] file_crc : 0xdf07a00d
+ 2025-02-25 18:25:20.162    Begin EraseFlash
+ 2025-02-25 18:25:20.165    Start 4K Erase
+ 2025-02-25 18:25:20.165    End 4K Erase
+ 2025-02-25 18:25:20.165    Start 64K Erase
+ 2025-02-25 18:25:20.914    End 64K Erase
+ 2025-02-25 18:25:20.914    EraseFlash ->pass
+ 2025-02-25 18:25:20.917    Begin WriteFlash...
+ 2025-02-25 18:25:31.378    WriteFlash ->pass
+ 2025-02-25 18:25:31.378    Begin read CRC
+ 2025-02-25 18:25:34.222    CRC_Verify ->pass
+ 2025-02-25 18:25:34.250    Enprotect pass
+ 2025-02-25 18:25:34.283    Boot_Reboot
+
+ 2025-02-25 18:25:34.301    Total Test Time : 14.307 s
+ 2025-02-25 18:25:34.301    Writing Flash OK                             
+
+ 2025-02-25 18:25:34.301    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:29:09.524    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 18:29:09.725    do_reset_signal
+ 2025-02-25 18:29:09.725    Getting Bus...
+ 2025-02-25 18:29:09.799    Gotten Bus...
+ 2025-02-25 18:29:09.815    Got ChipId: 0x7238
+
+ 2025-02-25 18:29:09.815    Current Chip is : BK7238
+ 2025-02-25 18:29:09.833    Current baudrate : 1500000 success
+ 2025-02-25 18:29:09.836    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 18:29:09.836    Got FLashMID: 0x154285
+
+ 2025-02-25 18:29:09.839    Unprotecting Flash
+ 2025-02-25 18:29:09.870    Unprotected Flash ->pass
+ 2025-02-25 18:29:09.870    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 18:29:09.870    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 18:29:09.870    [ 0 ] file_crc : 0xbf976f05
+ 2025-02-25 18:29:09.870    Begin EraseFlash
+ 2025-02-25 18:29:09.873    Start 4K Erase
+ 2025-02-25 18:29:09.873    End 4K Erase
+ 2025-02-25 18:29:09.873    Start 64K Erase
+ 2025-02-25 18:29:10.622    End 64K Erase
+ 2025-02-25 18:29:10.622    EraseFlash ->pass
+ 2025-02-25 18:29:10.625    Begin WriteFlash...
+ 2025-02-25 18:29:21.087    WriteFlash ->pass
+ 2025-02-25 18:29:21.087    Begin read CRC
+ 2025-02-25 18:29:23.931    CRC_Verify ->pass
+ 2025-02-25 18:29:23.958    Enprotect pass
+ 2025-02-25 18:29:23.992    Boot_Reboot
+
+ 2025-02-25 18:29:24.010    Total Test Time : 14.210 s
+ 2025-02-25 18:29:24.010    Writing Flash OK                             
+
+ 2025-02-25 18:29:24.011    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:30:37.526    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 18:30:37.727    do_reset_signal
+ 2025-02-25 18:30:37.727    Getting Bus...
+ 2025-02-25 18:30:37.802    Gotten Bus...
+ 2025-02-25 18:30:37.914    Got ChipId: 0x7238
+
+ 2025-02-25 18:30:37.914    Current Chip is : BK7238
+ 2025-02-25 18:30:37.932    Current baudrate : 1500000 success
+ 2025-02-25 18:30:37.935    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 18:30:37.935    Got FLashMID: 0x154285
+
+ 2025-02-25 18:30:37.939    Unprotecting Flash
+ 2025-02-25 18:30:37.970    Unprotected Flash ->pass
+ 2025-02-25 18:30:37.970    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 18:30:37.970    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 18:30:37.971    [ 0 ] file_crc : 0x84d83088
+ 2025-02-25 18:30:37.971    Begin EraseFlash
+ 2025-02-25 18:30:37.973    Start 4K Erase
+ 2025-02-25 18:30:37.973    End 4K Erase
+ 2025-02-25 18:30:37.973    Start 64K Erase
+ 2025-02-25 18:30:38.722    End 64K Erase
+ 2025-02-25 18:30:38.722    EraseFlash ->pass
+ 2025-02-25 18:30:38.725    Begin WriteFlash...
+ 2025-02-25 18:30:49.189    WriteFlash ->pass
+ 2025-02-25 18:30:49.189    Begin read CRC
+ 2025-02-25 18:30:52.031    CRC_Verify ->pass
+ 2025-02-25 18:30:52.061    Enprotect pass
+ 2025-02-25 18:30:52.094    Boot_Reboot
+
+ 2025-02-25 18:30:52.112    Total Test Time : 14.309 s
+ 2025-02-25 18:30:52.112    Writing Flash OK                             
+
+ 2025-02-25 18:30:52.112    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:34:53.514    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 18:34:53.715    do_reset_signal
+ 2025-02-25 18:34:53.715    Getting Bus...
+ 2025-02-25 18:34:53.789    Gotten Bus...
+ 2025-02-25 18:34:53.804    Got ChipId: 0x7238
+
+ 2025-02-25 18:34:53.804    Current Chip is : BK7238
+ 2025-02-25 18:34:53.823    Current baudrate : 1500000 success
+ 2025-02-25 18:34:53.826    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 18:34:53.826    Got FLashMID: 0x154285
+
+ 2025-02-25 18:34:53.829    Unprotecting Flash
+ 2025-02-25 18:34:53.860    Unprotected Flash ->pass
+ 2025-02-25 18:34:53.860    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 18:34:53.860    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 18:34:53.860    [ 0 ] file_crc : 0x5230387d
+ 2025-02-25 18:34:53.860    Begin EraseFlash
+ 2025-02-25 18:34:53.863    Start 4K Erase
+ 2025-02-25 18:34:53.863    End 4K Erase
+ 2025-02-25 18:34:53.863    Start 64K Erase
+ 2025-02-25 18:34:54.612    End 64K Erase
+ 2025-02-25 18:34:54.612    EraseFlash ->pass
+ 2025-02-25 18:34:54.614    Begin WriteFlash...
+ 2025-02-25 18:35:05.070    WriteFlash ->pass
+ 2025-02-25 18:35:05.070    Begin read CRC
+ 2025-02-25 18:35:07.914    CRC_Verify ->pass
+ 2025-02-25 18:35:07.941    Enprotect pass
+ 2025-02-25 18:35:07.975    Boot_Reboot
+
+ 2025-02-25 18:35:07.993    Total Test Time : 14.204 s
+ 2025-02-25 18:35:07.993    Writing Flash OK                             
+
+ 2025-02-25 18:35:07.993    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:36:21.094    Current port : COM15 + BaudRate : 115200 connect failed
+ 2025-02-25 18:36:21.094    Connect device fail!
+ 2025-02-25 18:36:21.105    Total Test Time : 0.000 s
+ 2025-02-25 18:36:21.105    Writing Flash Failed, code 0                
+
+ 2025-02-25 18:36:21.105    
+==============================================================
+				   (warning)
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+
+
+=====================================================================
+ cmdline: |C:\Users\Bob.Xian\AppData\Local\Arduino15\packages\bk7238\tools\bk_loader\2.1.10.0\bk_loader.exe download -p 15 -b 1500000 -i C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin --fast-link 1 |
+ bk_loader version 2.1.10.0: build @Jan  4 2024 11:44:53 
+ 2025-02-25 18:36:41.497    Current port : COM15 + BaudRate : 115200 connect success
+ 2025-02-25 18:36:41.699    do_reset_signal
+ 2025-02-25 18:36:41.699    Getting Bus...
+ 2025-02-25 18:36:41.773    Gotten Bus...
+ 2025-02-25 18:36:41.884    Got ChipId: 0x7238
+
+ 2025-02-25 18:36:41.884    Current Chip is : BK7238
+ 2025-02-25 18:36:41.903    Current baudrate : 1500000 success
+ 2025-02-25 18:36:41.906    rxf-uid : 41 50 32 4c 33 36 37 07 00 84 1b 06 47 01 00 78 
+ 2025-02-25 18:36:41.906    Got FLashMID: 0x154285
+
+ 2025-02-25 18:36:41.909    Unprotecting Flash
+ 2025-02-25 18:36:41.941    Unprotected Flash ->pass
+ 2025-02-25 18:36:41.941    [ 0 ] file_path : C:\Users\Bob.Xian\AppData\Local\arduino\sketches\47CA30532C55A67E10190555FDDC8A05\test1.ino_all.bin
+ 2025-02-25 18:36:41.941    [ 0 ] file_length : 0x132000 (1224 KB)
+ 2025-02-25 18:36:41.941    [ 0 ] file_crc : 0xa8e4d24
+ 2025-02-25 18:36:41.941    Begin EraseFlash
+ 2025-02-25 18:36:41.944    Start 4K Erase
+ 2025-02-25 18:36:41.944    End 4K Erase
+ 2025-02-25 18:36:41.944    Start 64K Erase
+ 2025-02-25 18:36:42.692    End 64K Erase
+ 2025-02-25 18:36:42.692    EraseFlash ->pass
+ 2025-02-25 18:36:42.694    Begin WriteFlash...
+ 2025-02-25 18:36:53.155    WriteFlash ->pass
+ 2025-02-25 18:36:53.155    Begin read CRC
+ 2025-02-25 18:36:55.999    CRC_Verify ->pass
+ 2025-02-25 18:36:56.027    Enprotect pass
+ 2025-02-25 18:36:56.059    Boot_Reboot
+
+ 2025-02-25 18:36:56.076    Total Test Time : 14.302 s
+ 2025-02-25 18:36:56.076    Writing Flash OK                             
+
+ 2025-02-25 18:36:56.076    
+==============================================================
+     _             (done)
+    | |                 
+  __| | ___  _ __   ___ 
+ / _  |/ _ \|  _ \ / _ \
+| (_| | (_) | | | |  __/
+ \__,_|\___/|_| |_|\___|
+{All Finished Successfully}
+

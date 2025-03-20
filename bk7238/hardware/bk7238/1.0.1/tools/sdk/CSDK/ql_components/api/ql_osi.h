@@ -408,16 +408,16 @@ extern  uint32_t ql_rtos_event_group_get_bits(ql_event_group_t event_group);
 extern  uint32_t ql_rtos_event_group_wait_bits(
 	ql_event_group_t event_group, 
     const uint32_t val,
-    const bool clear_on_exit, 
-	const bool wait_all_bits, 
+    const uint8_t clear_on_exit, 
+	const uint8_t wait_all_bits, 
 	int timeout
 );
 
 
-extern uint32_t ql_rtos_event_group_clear_bits(ql_event_group_t event_group, const uint32_t val, bool isr);
+extern uint32_t ql_rtos_event_group_clear_bits(ql_event_group_t event_group, const uint32_t val, uint8_t isr);
 
 
-extern uint32_t ql_rtos_event_group_set_bits(ql_event_group_t event_group, const uint32_t val, bool isr);
+extern uint32_t ql_rtos_event_group_set_bits(ql_event_group_t event_group, const uint32_t val, uint8_t isr);
 
 
 extern ql_rtos_status ql_rtos_task_flags_set (ql_task_t taskRef, uint32_t flags);

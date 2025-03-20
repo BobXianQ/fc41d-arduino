@@ -15,7 +15,7 @@
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-  
+
   Modified 23 November 2006 by David A. Mellis
   Modified 28 September 2010 by Mark Sproul
   Modified 14 August 2012 by Alarus
@@ -30,78 +30,83 @@
 
 #include "HardwareSerial.h"
 
+#include "ql_uart.h"
 
 HardwareSerial Serial(0);
 HardwareSerial Serial1(1);
 
 // Public Methods //////////////////////////////////////////////////////////////
 
-void HardwareSerial::begin(unsigned long baud, byte config)
-{
-    // bk_uart_set_baud(uart_port,baud);
-    uart_start = 1;
-}
+void HardwareSerial::begin(unsigned long baud, byte config) {
+    ql_uart_config_s uart_cfg;
 
-void HardwareSerial::end()
-{
+    uart_cfg.baudrate = QL_UART_BAUD_115200;
+    uart_cfg.data_bit = QL_UART_DATABIT_8;
+    uart_cfg.parity_bit = QL_UART_PARITY_NONE;
+    uart_cfg.stop_bit = QL_UART_STOP_1;
+    uart_cfg.flow_ctrl = QL_FC_NONE;
+
+    HAL_ASSERT(QL_UART_SUCCESS == ql_uart_set_dcbconfig(uart_port, &uart_cfg));
+    HAL_ASSERT(QL_UART_SUCCESS == ql_uart_open(uart_port));
+
+    uart_start = 1;
+
+_exit:
     uart_start = 0;
 }
 
-int HardwareSerial::available(void)
-{
-    if(!uart_start)
+void HardwareSerial::end() {
+    uart_start = 0;
+}
+
+int HardwareSerial::available(void) {
+    if (!uart_start)
         return 0;
 
     int len = 0;
-    // len = bk_uart_get_length_in_buffer((bk_uart_t)uart_port);
+    len = ql_uart_get_rx_count(uart_port);
     return len;
 }
 
-int HardwareSerial::peek(void)
-{
+int HardwareSerial::peek(void) {
     uint8_t data;
-    if(!uart_start)
+    if (!uart_start)
         return 0;
 
-    if(!available())
-      return 0;
-
-    // if(bk_uart_recv_prefetch((bk_uart_t)uart_port, &data, 1, 0) == 0)
-    //     return 1;
-    // else
+    if (!available())
         return 0;
+
+    HAL_ASSERT(QL_UART_SUCCESS == ql_uart_read_prefetch(uart_port, &data, 1));
+    return 1;
+
+_exit:
+    return 0;
 }
 
-int HardwareSerial::read(void)
-{
+int HardwareSerial::read(void) {
     uint8_t inbuf;
 
-    if(!uart_start)
+    if (!uart_start)
         return -1;
 
-    // if (bk_uart_recv((bk_uart_t)uart_port, &inbuf, 1, BEKEN_NO_WAIT) == 0)
-    //     return inbuf;
-    // else
-        return -1;
+        ql_uart_read(ql_uart_port_number_e port,uint8 *data, uint32 data_len)
+    return -1;
 }
 
-int HardwareSerial::availableForWrite(void)
-{
+int HardwareSerial::availableForWrite(void) {
     return MAX_UART_WRITE_SZIE;
 }
 
-void HardwareSerial::flush()
-{
-    if(!uart_start)
+void HardwareSerial::flush() {
+    if (!uart_start)
         return;
 
     // uart_fifo_flush((bk_uart_t)uart_port);
 }
 
 
-size_t HardwareSerial::write(uint8_t c)
-{
-    if(!uart_start)
+size_t HardwareSerial::write(uint8_t c) {
+    if (!uart_start)
         return 0;
 
     // bk_send_byte(uart_port,c);
@@ -109,9 +114,8 @@ size_t HardwareSerial::write(uint8_t c)
 }
 
 
-size_t HardwareSerial::write(const uint8_t *buffer,size_t size)
-{
-    if(!uart_start)
+size_t HardwareSerial::write(const   uint8_t* buffer, size_t size) {
+    if (!uart_start)
         return 0;
 
     // bk_send_string(uart_port, (char *)buffer);

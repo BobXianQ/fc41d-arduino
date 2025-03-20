@@ -2,6 +2,7 @@
 
 void pinMode(uint8_t pin, uint8_t mode)
 {
+    
     return;
 }
 

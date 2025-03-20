@@ -23,6 +23,14 @@ do{                                         \
     }                                       \
 } while (0)
 
+#define HAL_ASSERT(cond)                                                            \
+do{                                                                                 \
+    if (!cond) {                                                                    \
+        QL_HAL_LOG(LOG_ERROR, "ERROR %s:%d !("cond")\r\n", __func__, __LINE__);     \
+        goto _exit;                                                                   \
+    }                                                                               \
+} while (0)
+
 #ifdef __cplusplus
 }
 #endif

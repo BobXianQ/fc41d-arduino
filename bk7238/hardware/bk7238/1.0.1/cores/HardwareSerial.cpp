@@ -30,33 +30,29 @@
 
 #include "HardwareSerial.h"
 
-#include "ql_uart.h"
+#include "ql_hal.h"
 
-HardwareSerial Serial(0);
+HardwareSerial Serial0(0);
 HardwareSerial Serial1(1);
 
 // Public Methods //////////////////////////////////////////////////////////////
 
 void HardwareSerial::begin(unsigned long baud, byte config) {
-    ql_uart_config_s uart_cfg;
+    log_i("xbtest!!! %s:%d uart_port=%d\r\n", __func__, __LINE__, uart_port);
 
-    uart_cfg.baudrate = QL_UART_BAUD_115200;
-    uart_cfg.data_bit = QL_UART_DATABIT_8;
-    uart_cfg.parity_bit = QL_UART_PARITY_NONE;
-    uart_cfg.stop_bit = QL_UART_STOP_1;
-    uart_cfg.flow_ctrl = QL_FC_NONE;
-
-    HAL_ASSERT(QL_UART_SUCCESS == ql_uart_set_dcbconfig(uart_port, &uart_cfg));
-    HAL_ASSERT(QL_UART_SUCCESS == ql_uart_open(uart_port));
-
+    HAL_ASSERT(QL_HAL_SUCCESS == ql_hal_uart_begin(uart_port, (uint32_t)baud, config));
     uart_start = 1;
 
 _exit:
-    uart_start = 0;
+    return;
 }
 
 void HardwareSerial::end() {
+    HAL_ASSERT(QL_HAL_SUCCESS == ql_hal_uart_end(uart_port));
     uart_start = 0;
+
+_exit:
+    return;
 }
 
 int HardwareSerial::available(void) {
@@ -64,7 +60,8 @@ int HardwareSerial::available(void) {
         return 0;
 
     int len = 0;
-    len = ql_uart_get_rx_count(uart_port);
+    ql_hal_uart_available(uart_port, &len);
+
     return len;
 }
 
@@ -76,7 +73,7 @@ int HardwareSerial::peek(void) {
     if (!available())
         return 0;
 
-    HAL_ASSERT(QL_UART_SUCCESS == ql_uart_read_prefetch(uart_port, &data, 1));
+    HAL_ASSERT(QL_HAL_SUCCESS == ql_hal_uart_peek(uart_port));
     return 1;
 
 _exit:
@@ -89,35 +86,48 @@ int HardwareSerial::read(void) {
     if (!uart_start)
         return -1;
 
-        ql_uart_read(ql_uart_port_number_e port,uint8 *data, uint32 data_len)
+    HAL_ASSERT(QL_HAL_SUCCESS == ql_hal_uart_read(uart_port, &inbuf, 1));
+    return inbuf;
+
+_exit:
     return -1;
 }
 
 int HardwareSerial::availableForWrite(void) {
-    return MAX_UART_WRITE_SZIE;
+    uint32_t len = 0;
+    HAL_ASSERT(QL_HAL_SUCCESS == ql_hal_uart_availableForWrite(uart_port, &len));
+    return len;
+
+_exit:
+    return 0;
 }
 
 void HardwareSerial::flush() {
     if (!uart_start)
         return;
-
-    // uart_fifo_flush((bk_uart_t)uart_port);
+    ql_hal_uart_flush(uart_port);
 }
-
 
 size_t HardwareSerial::write(uint8_t c) {
     if (!uart_start)
         return 0;
 
-    // bk_send_byte(uart_port,c);
-    return 1;
+    uint32_t write_len = 0;
+    HAL_ASSERT(QL_HAL_SUCCESS == ql_hal_uart_write(uart_port, (uint8*)&c, 1, &write_len));
+    return write_len;
+
+_exit:
+    return 0;
 }
 
-
-size_t HardwareSerial::write(const   uint8_t* buffer, size_t size) {
+size_t HardwareSerial::write(const uint8_t* buffer, size_t size) {
     if (!uart_start)
         return 0;
 
-    // bk_send_string(uart_port, (char *)buffer);
-    return size;
+    uint32_t write_len = 0;
+    HAL_ASSERT(QL_HAL_SUCCESS == ql_hal_uart_write(uart_port, buffer, size, &write_len));
+    return write_len;
+
+_exit:
+    return 0;
 }

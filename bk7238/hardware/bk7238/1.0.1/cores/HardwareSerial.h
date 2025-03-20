@@ -56,14 +56,14 @@
 #define SERIAL_7O2 0x3C
 #define SERIAL_8O2 0x3E
 
-#define MAX_UART_WRITE_SZIE     512
-
 class HardwareSerial : public Stream
 {
-  public:
+  protected:
     uint8_t uart_port;
     uint8_t uart_start;
-    HardwareSerial(int uart_nr){uart_port = uart_nr; uart_start = 0;}
+
+  public:
+    HardwareSerial(uint8_t uart_nr):uart_port(uart_nr), uart_start(0){};
     virtual ~HardwareSerial(){};
 
     void begin(unsigned long baud) { begin(baud, SERIAL_8N1); }
@@ -86,7 +86,8 @@ class HardwareSerial : public Stream
     operator bool() { return true; }
 };
 
-extern HardwareSerial Serial;
+#define Serial Serial0
+extern HardwareSerial Serial0;
 extern HardwareSerial Serial1;
 
 

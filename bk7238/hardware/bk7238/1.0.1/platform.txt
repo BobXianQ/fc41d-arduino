@@ -28,7 +28,7 @@ compiler.ar.cmd = arm-none-eabi-ar.exe
 compiler.c.elf.cmd = arm-none-eabi-gcc.exe
 compiler.c.bin.cmd = arm-none-eabi-objcopy.exe
 
-compiler.cpreprocessor.flags = -D_GNU_SOURCE -DCFG_OS_FREERTOS=1 -DBUILDING_LIBCURL -DQL_CSDK_SUPPORT -DQL_CSDK_MODE=1 -DUSE_MBEDTLS_2_27_0 -DQL_PROJECT_FGM842D -DMBEDTLS_CONFIG_FILE="tls_config.h" -iprefix "{compiler.sdk.path}/CSDK/" @{compiler.sdk.path}/CSDK/include3.txt
+compiler.cpreprocessor.flags = -DBOARD_FGM842D -DPLAT_BK7238 -D_GNU_SOURCE -DCFG_OS_FREERTOS=1 -DBUILDING_LIBCURL -DQL_CSDK_SUPPORT -DQL_CSDK_MODE=1 -DUSE_MBEDTLS_2_27_0 -DQL_PROJECT_FGM842D -DMBEDTLS_CONFIG_FILE="tls_config.h" -iprefix "{compiler.sdk.path}/CSDK/" @{compiler.sdk.path}/CSDK/include3.txt
 
 
 compiler.c.elf.libs = -lrf_test -lsupplicant -los -ldriver -lsensor -lairkiss -lql_adapt -lwolfssl -lfunc -lusb -lmisc -lble_pub -lsrc_s -lrwnx -lble -lrf_use -lcal -lwpa -luart_debug -lbk_aware -lcurl -llfs -lmbedtls -lmqtt -lw5500 -lhttp_parser -llwip -lql_example -lstdc++
@@ -74,9 +74,9 @@ tools.beken_packager.conifg.cmd.linux = config.sh
 
 recipe.objcopy.bin.pattern_args = {tools.beken_packager.path} {build.path}\{build.project_name}_all.bin
 
-tools.beken_packager.conifg.args.windows = {compiler.sdk.path}/CSDK/ql_build/bootloader/bootloader1.bin {build.path}\{build.project_name}.bin {tools.beken_packager.path}
+tools.beken_packager.conifg.args.windows = {compiler.sdk.path}/CSDK/ql_build/bootloader/bootloader2.bin {build.path}\{build.project_name}.bin {tools.beken_packager.path}
 
-tools.beken_packager.conifg.args.linux = {compiler.sdk.path}/CSDK/ql_build/bootloader/bootloader1.bin {build.path}/{build.project_name}.bin {tools.beken_packager.path}
+tools.beken_packager.conifg.args.linux = {compiler.sdk.path}/CSDK/ql_build/bootloader/bootloader2.bin {build.path}/{build.project_name}.bin {tools.beken_packager.path}
 
 recipe.objcopy.partitions.bin.1.pattern = "{tools.beken_packager.path}/{tools.beken_packager.conifg.cmd}" {tools.beken_packager.conifg.args}
 

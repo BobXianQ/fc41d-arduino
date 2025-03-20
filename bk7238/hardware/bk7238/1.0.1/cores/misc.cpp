@@ -28,5 +28,5 @@ void  delayMicroseconds(uint32_t us)
 
 void delay(uint32_t ms)
 {
-   	// rtos_delay_milliseconds(ms);
+    vTaskDelay(ms / portTICK_PERIOD_MS);
 }

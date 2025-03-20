@@ -7,14 +7,14 @@ extern "C" {
 
 #include "ql_hal.h"
 
-int ql_hal_uart_set_baud(uint8_t uart, int baud);
-
-#define log_d(format, ...)  do {} while(0)
-#define log_i(format, ...) do {} while(0)
-#define log_w(format, ...) do {} while(0)
-#define log_e(format, ...) do {} while(0)
-#define log_n(format, ...) do {} while(0)
-#define log_v(format, ...) do {} while(0)
+    ql_hal_errcode_e ql_hal_uart_begin(uint8_t port, uint32_t baudrate, uint8_t config);
+    ql_hal_errcode_e ql_hal_uart_end(uint8_t port);
+    ql_hal_errcode_e ql_hal_uart_available(uint8_t port, int* len);
+    ql_hal_errcode_e ql_hal_uart_peek(uint8_t port);
+    ql_hal_errcode_e ql_hal_uart_read(uint8_t port, uint8_t* data, uint32_t data_len);
+    ql_hal_errcode_e ql_hal_uart_availableForWrite(uint8_t port, uint32_t* len);
+    ql_hal_errcode_e ql_hal_uart_flush(uint8_t port);
+    ql_hal_errcode_e ql_hal_uart_write(uint8_t port, const uint8_t* data, uint32_t data_len, uint32_t* write_len);
 
 #ifdef __cplusplus
 }

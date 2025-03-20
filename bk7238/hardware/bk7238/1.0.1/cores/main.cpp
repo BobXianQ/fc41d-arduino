@@ -6,9 +6,6 @@
 
 ql_task_t arduino_thread_ctx = NULL;
 
-__weak void setup(void){}
-__weak void loop(void){}
-
 static void arduino_thread(void* args) {
 	ql_rtos_task_sleep_ms(3000);
 	setup();
@@ -27,7 +24,7 @@ void arduino_thread_creat(void) {
 		NULL);
 
 	if (ret != 0) {
-		QL_HAL_LOG(LOG_ERROR, "Failed to create arduino thread: %d\r\n", ret);
+		log_e("Failed to create arduino thread: %d\r\n", ret);
 	}
 }
 

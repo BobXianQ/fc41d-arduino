@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "ql_hal_gpio.h": "c"
+        "ql_hal_gpio.h": "c",
+        "ql_hal_uart.h": "c",
+        "ql_hal.h": "c",
+        "ql_uart.h": "c",
+        "ql_hal_log.h": "c",
+        "ql_osi.h": "c",
+        "ql_api_common.h": "c"
     }
 }

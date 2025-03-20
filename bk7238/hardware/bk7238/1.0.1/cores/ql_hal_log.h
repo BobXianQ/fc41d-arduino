@@ -23,11 +23,18 @@ do{                                         \
     }                                       \
 } while (0)
 
+#define log_d(format, ...) QL_HAL_LOG(LOG_DEBUG, format, ##__VA_ARGS__)
+#define log_i(format, ...) QL_HAL_LOG(LOG_INFO,  format, ##__VA_ARGS__)
+#define log_w(format, ...) QL_HAL_LOG(LOG_WARN,  format, ##__VA_ARGS__)
+#define log_e(format, ...) QL_HAL_LOG(LOG_ERROR, format, ##__VA_ARGS__)
+#define log_n(format, ...) do {} while(0)
+#define log_v(format, ...) do {} while(0)
+
 #define HAL_ASSERT(cond)                                                            \
 do{                                                                                 \
-    if (!cond) {                                                                    \
-        QL_HAL_LOG(LOG_ERROR, "ERROR %s:%d !("cond")\r\n", __func__, __LINE__);     \
-        goto _exit;                                                                   \
+    if (!(cond)) {                                                                  \
+        QL_HAL_LOG(LOG_ERROR, "ERROR %s:%d !("#cond")\r\n", __func__, __LINE__);     \
+        goto _exit;                                                                 \
     }                                                                               \
 } while (0)
 

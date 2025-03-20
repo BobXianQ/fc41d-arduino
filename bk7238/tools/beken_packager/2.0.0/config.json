@@ -3,7 +3,7 @@
  	"magic": "RT-Thread",                                           
 	"section": [                                                    
 	{                                                               
-		"firmware": "C:\\Users\\Bob.Xian\\AppData\\Local\\Arduino15\\packages\\bk7238\\hardware\\bk7238\\1.0.1/tools/sdk/CSDK/ql_build/bootloader/bootloader1.bin",          					
+		"firmware": "C:\\Users\\Bob.Xian\\AppData\\Local\\Arduino15\\packages\\bk7238\\hardware\\bk7238\\1.0.1/tools/sdk/CSDK/ql_build/bootloader/bootloader2.bin",          					
 		"partition": "bootloader",                                  
 		"size": "65280",                                            
 		"start_addr": "0x00000000",                                 
